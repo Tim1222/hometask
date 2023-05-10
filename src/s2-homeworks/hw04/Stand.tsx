@@ -15,28 +15,28 @@ const Stand = () => {
             <div className={s.inputs}>
                 {/*совместим со старым кодом:*/}
                 <div>
-                    {/*<SuperInputText*/}
-                    {/*    id={'hw4-super-input-like-old'}*/}
-                    {/*    value={stateForAllInputs}*/}
-                    {/*    onChange={(e) => setValue(e.currentTarget.value)}*/}
-                    {/*/>*/}
+                    <SuperInputText
+                        id={'hw4-super-input-like-old'}
+                        value={stateForAllInputs}
+                        onChange={(e) => setValue(e.currentTarget.value)}
+                    />
                 </div>
                 {/*инпут с ошибкой:*/}
                 <div>
-                    {/*<SuperInputText*/}
-                    {/*    id={'hw4-super-input-with-error'}*/}
-                    {/*    value={stateForAllInputs}*/}
-                    {/*    onChangeText={setValue}*/}
-                    {/*    error={error}*/}
-                    {/*    onEnter={() => {*/}
-                    {/*        setError(*/}
-                    {/*            stateForAllInputs.trim()*/}
-                    {/*                ? ''*/}
-                    {/*                : 'Error'*/}
-                    {/*        )*/}
-                    {/*        setValue('')*/}
-                    {/*    }}*/}
-                    {/*/>*/}
+                    <SuperInputText
+                        id={'hw4-super-input-with-error'}
+                        value={stateForAllInputs}
+                        onChangeText={setValue}
+                        error={error}
+                        onEnter={() => {
+                            setError(
+                                stateForAllInputs.trim()
+                                    ? ''
+                                    : 'Error'
+                            )
+                            setValue('')
+                        }}
+                    />
                 </div>
             </div>
 
