@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "-": "^0.0.1",
     "@emotion/react": "11.10.4",
     "@emotion/styled": "11.10.4",
     "@mui/material": "5.10.6",
@@ -16,7 +17,6 @@
     "@types/react-dom": "18.0.6",
     "@types/uuid": "8.3.4",
     "axios": "0.27.2",
-    "gh-pages": "^5.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-redux": "8.0.4",
@@ -52,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
